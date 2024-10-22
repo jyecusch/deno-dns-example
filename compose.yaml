@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  my_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: deno_dns_example
+    extra_hosts:
+      - "example.local:127.0.0.1"
